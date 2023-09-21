@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELAJAR NULLISH</title>
+</head>
+<body>
+    <H1> NULLISH OPRATOR</H1>
+    <!-- isinya null dan undefined -->
+    <h1 id="nulish"></h1>
+    <!-- //buat ngasi value ke variable yang 
+    // tipe datanya null atau undefined,jadi pas diakses walaupun 
+    // variablenya nullish,tapi bisa tetep ada valuenya -->
+    <script>
+   // versi panjang
+// let nama;
+// let data = nama;
+// if(data === undefined || data === null){
+//     data = "ini jadi ada nilainya";
+// }
+
+// document.getElementById("nulish").innerHTML = data;
+
+    //versi pendek menggunakkan nullish coalseling
+    let a;
+    let hasil = a ?? "nilainya jadi ada";
+
+    document.getElementById("nulish").innerHTML = hasil;
+
+
+    </script>
+</body>
+</html>

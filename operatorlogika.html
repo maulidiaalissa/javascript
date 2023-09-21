@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator logika</title>
+</head>
+<body>
+    <h1>Operator Logika</h1>
+    <h2 id="logika"></h2>
+<!-- operator logika ada 3 : &&, ||,! -->
+    <script>
+        let nama = "alissa"
+        let email = "alissamaulidia06@gmail.com"
+        let pass = "1234"
+        let hasil;
+
+        if(email == "alissamaulidia06@gmail.com"&& pass == "1234"){
+            hasil = "selamat datang "+ nama; 
+        }else{
+            hasil = "yah salahhhh"
+        }
+        document.getElementById("logika").innerHTML = hasil;
+    
+
+// yang penting salah satunya bener
+        // let nama = "alissa"
+        // let email = "alissamaulidia06@gmail.com"
+        // let pass = "1234"
+        // let hasil;
+
+        // if(email == "alissamaulidia06@gmail.com"&& || pass == "12345"){
+        //     hasil = "selamat datang "+ nama; 
+        // }else{
+        //     hasil = "yah salahhhh"
+        // }
+        // document.getElementById("logika").innerHTML = hasil;
+
+        // ! negasi pertentangan
+        if(!(email == "alissamaulidia06@gmail.com")){
+            hasil="betul"
+        }else{
+            hasil ="salah"
+        }
+        document.getElementById("logika").innerHTML = hasil;
+        
+    </script>
+</body>
+</html>

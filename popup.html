@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+</head>
+<body>
+    <h1 style ="text-align: center;">belajar pup up</h1>
+    <h2 style ="text-align: center;" id="out"></h2>
+    <script>
+        // contoh alert
+        // alert("helloww")
+
+        // contoh prompt
+        const nama = prompt("siapa nama kamu")
+        // bisa dua cara
+        document.getElementById("out").innerHTML = `helo,${name}`;
+        alert(`hello,${name}`);
+
+      // contoh confirm
+      const masuk = confirm("Apakah Yakin Anda Mau Masuk?")
+        // kalo cancelnya disini nanti munculnya `bias km bukan` doang soalnya kan kita blm input const name nya apa
+        if(masuk){
+            const name = prompt("Masukkan Nama Bias Kamu!")
+            alert(`Bias Kamu ${name}`);
+        }else{
+            alert(`Bias Kamu Bukan ${name}`);
+            // ini tu nama name nya bakal keluar kalo udh ngetik di promptnya abistu kita kensel
+        }
+
+    </script>
+</body>
+</html>

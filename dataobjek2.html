@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Objek Pt.2</title>
+</head>
+<style>
+    table {
+      border-collapse: collapse;
+      border: 1px solid black;
+      width: 80%;
+      margin: auto;
+      padding: auto;
+      margin-top: 20px;
+    }
+    th {
+      text-align: center;
+      background-color: rgb(184, 184, 231);
+    }
+    td {
+        text-align: center;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Jenis Skincare</h1>
+    <table border="1">
+        <tr>
+          <th>Merk</th>
+          <th>Varian</th>
+          <th>Ukuran</th>
+          <th>Harga</th>
+          <th>Deskripsi</th>
+        </tr>
+        <tr>
+          <td><span id="merk"></span></td>
+          <td><span id="varian"></span></td>
+          <td><span id="ukuran"></span></td>
+          <td><span id="harga"></span></td>
+          <td><span id="deskripsi"></span></td>
+        </tr>
+      </table>
+      
+      <script>
+        var skincare = {
+          merk: "Skintific",
+          varian: "Sunscreen",
+          ukuran: "40gr",
+          harga: "95.000",
+          deskripsi: function(){
+              return this.varian + " yang terbaik dari " + this.merk + " dengan harga murah, yaitu " + this.harga + " saja";
+          }
+        };
+  
+        document.getElementById("merk").innerHTML = skincare.merk;
+        document.getElementById("varian").innerHTML = skincare.varian;
+        document.getElementById("ukuran").innerHTML = skincare.ukuran;
+        document.getElementById("harga").innerHTML = skincare.harga;
+        document.getElementById("deskripsi").innerHTML = skincare.deskripsi();
+  
+        console.table([skincare]);
+        // atau ubah varnya jd const
+        
+      </script>
+</body>
+</html>

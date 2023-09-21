@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN OPRATOR</title>
+</head>
+<body>
+    <h1>In Oprator</h1>
+    <h1 id="inop"></h1>
+    <!-- in oprator buat ngecek apakah ada properti atau index
+    di dalam data objek.
+    berati in oprator mainin data objek atau array-->
+    <script>
+        // let permen={
+        //     nama:"golia",
+        //     kandungan:"mint"
+        // }
+        // // rumusnya = pake kutip trs "properti" in variable
+        // document.getElementById("inop").innerHTML="nama" in permen;
+
+
+        // // nyari null atau undefined
+        // let kota ={
+        //     depam:"bo",
+        //     tengah : undefined,
+        //     blkng:"gor"
+        // }
+        // document.getElementById("inop").innerHTML = "tengah" in kota;
+
+
+        // di array
+        const bunga =["mawar","melati","semuanya indah"]
+        document.getElementById("inop").innerHTML = 2 in bunga;
+    </script>
+</body>
+</html>
